@@ -1,5 +1,5 @@
 # below method is used to read a file
-f = open("9file.txt") # you can also write f = open("9file.txt", "r")
+f = open("09_file_handling_example1.txt") # you can also write f = open("09_file_handling_example1.txt", "r")
 data = f.read()
 print(data)
 f.close()
@@ -9,13 +9,13 @@ f.close()
 # below method is used to create a file
 st = "hey everyone!"
 
-f = open("9myfile.txt", "w")
+f = open("09_file_handling_example2.txt", "w")
 f.write(st)
 f.close()
 
 
 
-f = open("9thisfile.txt")
+f = open("09_file_handling_example3.txt")
 
 # lines = f.readlines()    # readlines returns the list of lines
 # print(lines, type(lines))
@@ -50,12 +50,12 @@ while(line != ""):
 f.close()
 
 
-f = open("9thisfile.txt")
+f = open("09_file_handling_example3.txt")
 print(f.read())
 f.close()
 
 # The above part can be written using with statement like this:
-with open("9thisfile.txt") as f:
+with open("09_file_handling_example3.txt") as f:
     print(f.read())
 
 # you dont have to explicitely close the file above    
