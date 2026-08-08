@@ -167,7 +167,7 @@ class number:
         self.n = n
 
     def __add__(self, num):     # you can use others too, like __sub__ for subtraction
-        return self.n + num    
+        return self.n + num.n  
 
 n = number(1)
 m = number(2)
